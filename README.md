@@ -4,6 +4,8 @@
 
 > Proyecto para mostrar un fetch a una api, y poder consumir su información en el front-end, aplicando variedad de métodos y elementos.
 
+* Page: [https://rocksyro.github.io/poke-card/](https://rocksyro.github.io/poke-card/)
+
 ## Author
 
 👤 **Rocio Carle**
