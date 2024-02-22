@@ -1,0 +1,78 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   '/Users/rocksy/.nvm/versions/node/v21.2.0/bin/node',
+1 verbose cli   '/Users/rocksy/node_modules/.bin/npm',
+1 verbose cli   'view',
+1 verbose cli   'Poke-Card'
+1 verbose cli ]
+2 info using npm@2.15.12
+3 info using node@v21.2.0
+4 verbose config Skipping project config: /Users/rocksy/.npmrc. (matches userconfig)
+5 silly mapToRegistry name Poke-Card
+6 silly mapToRegistry using default registry
+7 silly mapToRegistry registry https://registry.npmjs.org/
+8 silly mapToRegistry data Result {
+8 silly mapToRegistry   raw: 'Poke-Card',
+8 silly mapToRegistry   scope: null,
+8 silly mapToRegistry   name: 'Poke-Card',
+8 silly mapToRegistry   rawSpec: '',
+8 silly mapToRegistry   spec: 'latest',
+8 silly mapToRegistry   type: 'tag'
+8 silly mapToRegistry }
+9 silly mapToRegistry uri https://registry.npmjs.org/Poke-Card
+10 verbose request uri https://registry.npmjs.org/Poke-Card
+11 verbose request no auth needed
+12 info attempt registry request try #1 at 19:52:44
+13 verbose request id e4b63ae260cdfb28
+14 http request GET https://registry.npmjs.org/Poke-Card
+15 http 404 https://registry.npmjs.org/Poke-Card
+16 verbose headers {
+16 verbose headers   date: 'Thu, 22 Feb 2024 22:52:45 GMT',
+16 verbose headers   'content-type': 'application/json',
+16 verbose headers   'content-length': '21',
+16 verbose headers   connection: 'keep-alive',
+16 verbose headers   'cf-ray': '859acd1b9e871b26-GRU',
+16 verbose headers   vary: 'Accept-Encoding',
+16 verbose headers   server: 'cloudflare'
+16 verbose headers }
+17 silly get cb [
+17 silly get   404,
+17 silly get   {
+17 silly get     date: 'Thu, 22 Feb 2024 22:52:45 GMT',
+17 silly get     'content-type': 'application/json',
+17 silly get     'content-length': '21',
+17 silly get     connection: 'keep-alive',
+17 silly get     'cf-ray': '859acd1b9e871b26-GRU',
+17 silly get     vary: 'Accept-Encoding',
+17 silly get     server: 'cloudflare'
+17 silly get   }
+17 silly get ]
+18 verbose stack Error: Not found : Poke-Card
+18 verbose stack     at makeError (/Users/rocksy/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+18 verbose stack     at CachingRegistryClient.<anonymous> (/Users/rocksy/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+18 verbose stack     at Request._callback (/Users/rocksy/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+18 verbose stack     at self.callback (/Users/rocksy/node_modules/npm/node_modules/request/request.js:187:22)
+18 verbose stack     at Request.emit (node:events:519:28)
+18 verbose stack     at Request.<anonymous> (/Users/rocksy/node_modules/npm/node_modules/request/request.js:1044:10)
+18 verbose stack     at Request.emit (node:events:519:28)
+18 verbose stack     at IncomingMessage.<anonymous> (/Users/rocksy/node_modules/npm/node_modules/request/request.js:965:12)
+18 verbose stack     at IncomingMessage.emit (node:events:531:35)
+18 verbose stack     at endReadableNT (node:internal/streams/readable:1696:12)
+19 verbose statusCode 404
+20 verbose pkgid Poke-Card
+21 verbose cwd /Users/rocksy/Documents/prueba/poke-card
+22 error Darwin 23.2.0
+23 error argv "/Users/rocksy/.nvm/versions/node/v21.2.0/bin/node" "/Users/rocksy/node_modules/.bin/npm" "view" "Poke-Card"
+24 error node v21.2.0
+25 error npm  v2.15.12
+26 error code E404
+27 error 404 Not found : Poke-Card
+27 error 404
+27 error 404 'Poke-Card' is not in the npm registry.
+27 error 404 Your package name is not valid, because
+27 error 404
+27 error 404  1. name can no longer contain capital letters
+27 error 404
+27 error 404 Note that you can also install from a
+27 error 404 tarball, folder, http url, or git url.
+28 verbose exit [ 1, true ]

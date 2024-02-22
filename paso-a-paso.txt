@@ -1,0 +1,45 @@
+Math.random:
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+
+Paso a paso:
+1- En index.html crear la etiqueta template con id y pegar el articulo "card".
+2- Crear carpeta js con archivo app.js dentro. Linkearla al html.
+3- Utilizar la función getRandomArbitrary y agregarle el Math.floor para que no sean números decimales.
+4- Crear una función async (porque vamos a necesitar que espere para mostralo en la vista). Utilizar try-catch para atrapar los errores que puedan ocurrir.
+5- Utilizamos async y await para decir: "Espera que tenemos una solicitud, cuando tengas esa info, pasa a la siguiente linea, cuando tenemos esa línea, mostramos en consola.
+6- Ejecutar la función.
+7- Utilizar el evento DOMContentLoaded. 
+https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event
+Y ubicar la ejecución de la función, dentro.
+    document.addEventListener('DOMContentLoaded', () =>{
+    fetchData()
+    })
+
+8- Pasarle como argumento un id a la función asíncrona, y modificar el fetch poniéndole las comillas invertidas y cambiar el parámetro de id estático por uno dinámico pokemon/${id}.
+
+9- Mandar el getRandomArbitrary al evento DOMContentLoaded, alojarlo en una variable y pasar esa variable a la función fetchData()
+
+10- Crear una variable con una función que va a imprimir la información.
+Seleccionar el elemento que va a alojar la info, y utilizar .content ya que queremos el contenido, no la etiqueta en sí.
+
+11- Atrapar el elemento contenedor en una variable.
+
+12- Utilizar createDocumentFragment en vez de innerHTML es una buena práctica, ya que permite que no se hagan renderizados innecesarios.
+Un fragmento es un objeto "invisible" que se genera en javascript, y no interfiere en el html. Nosotros modificamos el dom, no el html.
+
+13- El argumento pokemon trae el objeto con toda la información.
+
+14- Usar settAttribute
+https://developer.mozilla.org/es/docs/Web/API/Element/setAttribute
+
+Usar appendChild
+https://developer.mozilla.org/es/docs/Web/API/Node/appendChild#:~:text=appendChild()%20Es%20uno%20de,web%20a%20base%20de%20programaci%C3%B3n.
+
+clone.querySelector('.card-body-img').setAttribute('src', 'aModificar')
+
+fragment.appendChild(clone)
+flex.appendChild(fragment)
+
+15- Inspeccionar la api y buscar los datos para llenar los campos
+
+clone.querySelector('.card-body-img').setAttribute('src', pokemon.sprites.front_default)
